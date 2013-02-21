@@ -8,11 +8,12 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'jquery-rails'
 gem 'formtastic-bootstrap'
+gem 'omniauth'
 gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails'
+  gem 'rspec', '2.6'
   gem 'guard-rspec'
   gem 'guard-spork'
   gem 'spork'

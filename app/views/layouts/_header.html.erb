@@ -8,6 +8,11 @@
           <li><%= link_to "How it works", '#' %></li>
           <li><%= link_to "Our Team", '#' %></li>
           <li><%= link_to "Chef Application", '#' %></li>
+          <% if session[:user_id] %>
+            <li><%= link_to "Sign out", auth_destroy_path %></li>
+          <% else %>
+            <li><%= link_to "Sign in", "/auth/facebook/" %></li>
+          <% end %>
         </ul>
       </nav>
     </div>
